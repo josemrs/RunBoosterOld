@@ -1,0 +1,156 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="top|center_horizontal"
+	android:orientation="horizontal"
+	tools:context="es.jmrs.runbooster.MainActivity"
+	tools:ignore="MergeRootFrame"
+    android:id="@+id/controls_scrollview"
+    android:scrollbarStyle="outsideInset" >
+
+    <RelativeLayout
+        android:id="@+id/additional_control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        tools:context="es.jmrs.runbooster.MainActivity"
+        tools:ignore="MergeRootFrame" >
+
+        <Switch
+            android:id="@+id/trackingSwitch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/tracking"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <TextView
+            android:id="@+id/speedUnitsTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/currentSpeedEditText"
+            android:layout_alignBottom="@+id/currentSpeedEditText"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/speed_units"
+            android:textAppearance="?android:attr/textAppearance"
+            android:width="60dp" />
+
+        <TextView
+            android:id="@+id/speedUnitsTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/minimumSpeedEditText"
+            android:layout_alignBottom="@+id/minimumSpeedEditText"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/speed_units"
+            android:textAppearance="?android:attr/textAppearance"
+            android:width="60dp" />
+
+        <EditText
+            android:id="@+id/timeBelowMinimumEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/minimumSpeedEditText"
+            android:layout_toLeftOf="@+id/TextView04"
+            android:ems="4"
+            android:inputType="number"
+            android:text="@integer/time_below_minimum_default"
+            android:textAppearance="?android:attr/textAppearance" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/currentSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/currentSpeedEditText"
+            android:layout_alignBottom="@+id/currentSpeedEditText"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/current_speed_label"
+            android:textAppearance="?android:attr/textAppearance"
+            android:onClick="speedOnClick"
+			android:clickable="true" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timeBelowMinimumEditText"
+            android:layout_alignBottom="@+id/timeBelowMinimumEditText"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:scrollHorizontally="true"
+            android:text="@string/time_below_min"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timeBelowMinimumEditText"
+            android:layout_alignBottom="@+id/timeBelowMinimumEditText"
+            android:layout_alignLeft="@+id/speedUnitsTextView2"
+            android:gravity="center_vertical"
+            android:text="@string/seconds_short"
+            android:textAppearance="?android:attr/textAppearance"
+            android:width="60dp" />
+
+        <EditText
+            android:id="@+id/currentSpeedEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timeBelowMinimumEditText"
+            android:layout_below="@+id/timeBelowMinimumEditText"
+            android:clickable="false"
+            android:ems="4"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number|numberDecimal"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <TextView
+            android:id="@+id/minimumSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/minimumSpeedEditText"
+            android:layout_alignBottom="@+id/minimumSpeedEditText"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:scrollHorizontally="true"
+            android:text="@string/minimum_speed"
+            android:textAppearance="?android:attr/textAppearance"
+            android:onClick="speedOnClick"
+			android:clickable="true" />
+
+        <Switch
+            android:id="@+id/randomSwitch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trackingSwitch"
+            android:checked="false"
+            android:text="@string/random_selection"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <EditText
+            android:id="@+id/minimumSpeedEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/randomSwitch"
+            android:layout_toLeftOf="@+id/speedUnitsTextView1"
+            android:ems="4"
+            android:inputType="number|numberDecimal"
+            android:text="@integer/minimum_default_speed"
+            android:textAppearance="?android:attr/textAppearance" />
+
+    </RelativeLayout>
+</ScrollView>
+

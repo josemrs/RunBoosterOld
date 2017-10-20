@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp" 
+    android:background="@drawable/list_item_background"> 
+
+	<ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/track_art_description"
+        android:src="@drawable/note" />
+
+    <TextView
+        android:id="@+id/itemTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemImageView"
+        android:layout_toRightOf="@+id/itemImageView"
+        android:maxLines="1"
+        android:text="@string/track_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/itemArtistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemImageView"
+        android:layout_alignLeft="@+id/itemTitleTextView"
+        android:layout_toLeftOf="@+id/itemDurationTextView"
+        android:maxLines="1"
+        android:text="@string/track_artist"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/itemDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemArtistTextView"
+        android:layout_alignBottom="@+id/itemArtistTextView"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="4dp"
+        android:text="@string/track_duration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

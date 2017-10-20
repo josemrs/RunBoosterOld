@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General application -->
+    <string name="app_name">RunBooster</string>
+    <string name="exit">Exit</string>
+    <string name="random_selection">Random selection</string>
+    <string name="minimum_speed">Minimum speed</string>
+    <string name="speed_units">km/h</string>
+    <string name="current_speed_label">Current speed</string>
+    <string name="time_below_min">Time below minimum</string>
+    <string name="seconds_short">s</string>
+	<string name="disable_tracking">Disable tracking first</string>
+    <string name="stop_playback">Stop playback first</string>
+	<string name="app_still_running">The application is running in background</string>
+	<string name="exit_confirmation">This will close the application and its services</string>
+	
+    
+    <!-- Tracklist -->
+    <string name="add_track">Add track</string>
+    <string name="track_title">Title</string>
+	<string name="track_album">Album</string>
+	<string name="track_artist">Artist</string>
+	<string name="track_duration">00:00:00</string>
+    <string name="track_art_description">Art</string>
+    <string name="track_no_title">No title</string>
+    <string name="track_no_metadata">No metadata</string>
+    <string name="track_already_in_list">Track already added</string>
+    <string name="track_error_loading">Error loading tracks list</string>
+    <string name="track_error_saving">Error saving tracks list</string>
+    <string name="tracks_loading">Loading track list</string>
+    <string name="tracks_loaded">Track list loaded</string>
+    <string name="no_tracks">The track list is empty</string>
+
+    <!-- Music -->
+    <string name="music_playing">Playing</string>
+    <string name="music_on_pause">On Pause</string>
+    
+   	<!-- Tracking -->
+    <string name="tracking">Tracking</string>
+    <string name="gps_is_required_older">GPS is required</string>
+    <string name="gps_is_required_4_4">High accuracy mode is required</string>
+    <string name="gps_enable_question_older">Do you want to enable the GPS?\n(Check the checkbox and then press back)</string>
+    <string name="gps_enable_question_4_4">Do you want to select high accuracy mode?\n(Select high precision and then press back)</string>
+    <string name="gps_not_enabled">GPS is disabled, no speed available</string>
+    <string name="gps_service_connection_failed">Failed to connect to location services</string>
+
+    <!-- Others -->
+    
+</resources>

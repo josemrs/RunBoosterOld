@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="minimum_default_speed">4</integer>
+    <integer name="time_below_minimum_default">5</integer>
+</resources>

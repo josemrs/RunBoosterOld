@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General application -->
+    <string name="exit">Salir</string>
+    <string name="random_selection">Modo aleatorio</string>
+    <string name="minimum_speed">Velocidad mínima</string>
+    <string name="minimum_pace">Ritmo mínimo</string>
+    <string name="speed_units">km/h</string>
+    <string name="pace_units">min/km</string>
+    <string name="current_speed_label">Velocidad actual</string>
+    <string name="current_pace_label">Ritmo actual</string>
+    <string name="time_below_min">Tiempo bajo mínimo</string>
+    <string name="seconds_short">s</string>
+	<string name="disable_tracking">Desactive el seguimiento</string>
+    <string name="stop_playback">Pare la reproducción</string>
+	<string name="app_still_running">La aplicación continúa en segundo plano</string>
+	<string name="exit_confirmation">Esto cerrará la aplicación y sus servicios</string>
+	
+            
+    <!-- Tracklist -->
+    <string name="add_track">Añadir tema</string>
+    <string name="track_title">Título</string>
+	<string name="track_album">Álbum</string>
+	<string name="track_artist">Artista</string>
+	<string name="track_duration">00:00:00</string>
+    <string name="track_art_description">Art</string>
+    <string name="track_no_title">Sin título</string>
+    <string name="track_no_metadata">No hay metadatos</string>
+    <string name="track_already_in_list">Tema ya añadido</string>
+    <string name="track_error_loading">Error cargando la lista</string>
+    <string name="track_error_saving">Error guardando la lista</string>
+    <string name="tracks_loading">Cargando la lista de canciones</string>
+    <string name="tracks_loaded">Lista de canciones cargada</string>
+    <string name="no_tracks">La lista está vacia</string>
+    
+    <!-- Music -->
+    <string name="music_playing">Reproduciendo</string>
+    <string name="music_on_pause">En pausa</string>
+    
+	<!-- Tracking -->
+    <string name="tracking">Seguimiento</string>
+    <string name="gps_is_required_older">Se necesita GPS</string>
+    <string name="gps_is_required_4_4">Se necesita el modo de alta precisión</string>
+    <string name="gps_enable_question_older">¿Quiere activar el GPS?\n(Marque la casilla y pulse atrás)</string>
+    <string name="gps_enable_question_4_4">¿Quiere activar el modo de alta precisión?\n(Seleccione alta precisión y pulse atrás)</string>
+    <string name="gps_not_enabled">GPS desactivado, no hay info. de velocidad</string>
+    <string name="gps_service_connection_failed">Problema al conectar con el GPS</string>
+    
+    <!-- Others -->
+    
+</resources>
